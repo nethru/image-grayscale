@@ -1,7 +1,8 @@
 /*!
- * Image Grayscale 1.0
+ * Image Grayscale v1.0.0
  * Apply gray-scale effect to the images
- * MIT License
+ * Copyright 2013-2014 Nethru
+ * Licensed under MIT (http://nethru.mit-license.org/)
  */
 
 ;( function($) {
@@ -36,17 +37,17 @@
 				var property;
 
 				// Tests IE10 properties
-				for (var i = 0; i < ie10Styles.length; i++) {
+				for ( var i = 0; i < ie10Styles.length; i++ ) {
 					property = ie10Styles[i];
-					if (s[property] != undefined) {
+					if ( s[property] != undefined ) {
 						brwoser = "ie10";
 					}
 				}
 
 				// Tests IE11 properties
-				for (var i = 0; i < ie11Styles.length; i++) {
+				for ( var i = 0; i < ie11Styles.length; i++ ) {
 					property = ie11Styles[i];
-					if (s[property] != undefined) {
+					if ( s[property] != undefined ) {
 						brwoser = "ie11";
 					}
 				}
@@ -54,7 +55,7 @@
 				return brwoser != null;
 			},
 
-			_grayscaleIe = function(imgObj) {
+			_grayscaleIe = function( imgObj ) {
 				var settings = $(imgObj).data("imggrayscale"),
 					template = settings.svgTemplate,
 					imgW = imgObj.width+"px",
@@ -66,8 +67,8 @@
 
 			methods = {
 
-				init: function(options) {
-					var opts = $.extend({}, _defaults, options);
+				init: function( options ) {
+					var opts = $.extend( {}, _defaults, options );
 
 					return this.each(function() {
 						var $this = $(this),

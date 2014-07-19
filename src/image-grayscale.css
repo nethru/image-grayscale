@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*!
+ * Image Grayscale v1.0.0
+ * Apply gray-scale effect to the images
+ * Copyright 2013-2014 Nethru
+ * Licensed under MIT (http://nethru.mit-license.org/)
+ */
 
 img.imggrayscale {
 	-webkit-filter: grayscale(100%);
@@ -9,7 +15,7 @@ img.imggrayscale {
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate'\ values=\'0\'/>﻿</filter></svg>#grayscale");
 	filter: gray;
 
-	-moz-appearancewebkit-transition: all .5s ease; /* Fade to color for Chrome and Safari */
+	-moz-appearancewebkit-transition: all 0.5s ease; /* Fade to color for Chrome and Safari */
 	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
 }
 

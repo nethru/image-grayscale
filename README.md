@@ -12,8 +12,8 @@ Here is the [demo](http://htmlpreview.github.io/?https://github.com/nethru/image
 
 Include following files into your page:
 
-+ [image-grayscale.css](https://github.com/nethru/image-grayscale/raw/master/src/image-grayscale.css)
-+ [image-grayscale.js](http://github.com/nethru/image-grayscale/raw/master/src/image-grayscale.js)
++ [image-grayscale.min.css](https://github.com/nethru/image-grayscale/raw/master/build/image-grayscale.min.css)
++ [image-grayscale.min.js](http://github.com/nethru/image-grayscale/raw/master/build/image-grayscale.min.js)
 
 ## Basic Usage
 
